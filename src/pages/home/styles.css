@@ -1,0 +1,299 @@
+a {
+  text-decoration: none;
+}
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0, 0.8);
+  color: #fff;
+}
+
+#home h1 {
+  padding-top: 100px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* butoes da Home */
+
+.buttonGroup{
+  display: block;
+  margin: 40px 0 10px 0;
+  text-align: center;
+}
+
+.buttonGroup button {
+  background-color: #b90000; /* Green background */
+  color: #fff;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 600;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  margin-bottom: 10px;
+  transition: 0.3s;
+  border: none;
+}
+
+.buttonGroup button:not(:last-child) {
+  border-right: none;
+}
+
+/* Add a background color on hover */
+.buttonGroup button:hover{
+  background-color: #fecc00;
+  color: #000;
+}
+
+.buttonGroup button.active {
+  background: #fecc00;
+   color: #000;
+}
+
+/* Conteudo da Home */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie {
+  display: block;
+  flex: 1 1 200px;
+  height: 100%;
+  margin: 20px;
+  position: relative;
+  opacity: 0.85;
+}
+
+.movie:hover {
+  margin-top: -3px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.movie img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.movie-content {
+  background: #000;
+  width: 100%;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 10px 5px;
+}
+
+.movie #rate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  border-radius: 4px;
+  margin: 10px;
+  background: #fecc00;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  box-shadow: 0px -1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-content h3 {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.genres {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.genres p {
+  display: grid;
+  color: #fff;
+  padding: 3px;
+  font-size: 0.75rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #b90000;
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0  0 30px 0;
+}
+
+.pagination button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0px;
+  margin: 10px 5px;
+  width: 50px;
+  height: 50px;
+  background:#b90000;
+  transition: 0.3s;
+}
+
+.pagination button:hover{
+  cursor: pointer;
+  color: #000;
+  background: #fecc00;
+}
+
+.pagination button.active{
+  cursor: default;
+  pointer-events: none;
+  color: #000;
+  background: #fecc00;
+}
+
+.pagination button.disabled{
+  cursor: default;
+  pointer-events: none;
+}
+
+.hide{
+  display: none;
+}
+
+.pagination button.hide{
+  display: none;
+}
+
+/* Search */
+.site-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 30px auto;
+}
+
+button {
+  border: none;
+}
+
+.search-input {
+  display: flex;
+  border: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 1);
+  color: #b90000;
+  padding: 12px 5px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 30%;
+}
+
+.search-btn {
+  display: flex;
+  background: #fff;
+  color: #b90000;
+  padding: 16px 10px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Conteudo da Home */
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .movie {
+    display: block;
+    flex: 1 1 100px;
+    height: 100%;
+    margin: 20px;
+    position: relative;
+    opacity: 0.85;
+  }
+
+  .movie-content {
+    min-height: 120px;
+  }
+
+  .movie-content h3 {
+    font-size: 0.7rem;
+  }
+  
+  .genres p {
+    font-size: 0.6rem;
+  }
+  .search-input {
+    width: 70%;
+  }
+  
+  .search-btn {
+    display: flex;
+    background: #fff;
+    color: #b90000;
+    padding: 16.5px 10px;
+    font-size: 1rem;
+  }
+
+  /* butoes da Home */
+  .buttonGroup{
+    display: block;
+    margin: 25px 0 0 0;
+    text-align: center;
+  }
+
+  .buttonGroup button {
+    background-color: #b90000; /* Green background */
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 10px 14px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border: none;
+  }
+  .pagination button{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0px;
+    margin: 10px 5px;
+    width: 25px;
+    height: 25px;
+  }
+}

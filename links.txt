@@ -1,0 +1,4 @@
+
+api tmdb: https://developers.themoviedb.org/3/lists/v4-or-v3-lists
+
+ideia de dev: https://github.com/florinpop17/app-ideas/blob/master/Projects/3-Advanced/Movie-App.md

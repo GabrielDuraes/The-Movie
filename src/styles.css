@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("https://abrilsuperinteressante.files.wordpress.com/2019/04/site_poltronacinea.png?quality=70&strip=info&resize=680,453");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+  background-position: center;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #222;
+}
